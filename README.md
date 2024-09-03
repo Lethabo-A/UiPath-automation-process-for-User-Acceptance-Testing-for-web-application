@@ -1,6 +1,6 @@
-# Project Title
+# [Project Name] - 42686784
 
-A brief description of what this project is about, including key features and goals.
+This project involves implementing user acceptance testing and CRUD operations for Clients and Projects using UiPath, along with testing functionalities that are hosted on a web app.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -16,22 +16,27 @@ A brief description of what this project is about, including key features and go
 
 ## Overview
 
-Provide a detailed explanation of the project, including the problem it solves and its main objectives.
+This project demonstrates the use of robotic process automation with UiPath to perform user acceptance testing, including CRUD operations and a login process. The aim is to provide automated testing solutions hosted on a web application.
 
 ## Features
-- User acceptance testing via UiPath process.
-- CRUD operations for Clients and Projects.
-- Integrated login process testing.
-- Hosted on a web app (mention specifics if needed).
+- Automated user acceptance testing using UiPath.
+- CRUD functionalities for Clients and Projects.
+- Login process integration in the UiPath workflow.
+- Hosted on a web app to provide a complete testing environment.
+- Integration with GitHub for version control and project tracking.
 
 ## Technologies Used
-- **UiPath**: For creating and managing automation processes.
-- **GitHub**: For version control and project management.
-- **[Your Web Hosting Platform]**: Specify where your app is hosted.
-- **Languages/Frameworks**: List any languages or frameworks used (e.g., HTML, CSS, etc.).
+- **UiPath**: For building and managing automation workflows.
+- **GitHub**: For version control and collaborative project management.
+- **Web Hosting Platform**: [Specify the platform used, e.g., Azure, AWS].
+- **Languages/Frameworks**: HTML, CSS, JavaScript.
 
 ## Setup and Installation
 
 ### Prerequisites
-- List software requirements (e.g., UiPath, Git, etc.).
-- Provide links to installations if necessary.
+- Install [UiPath](https://www.uipath.com) to run automation workflows.
+- Install [Git](https://git-scm.com) for version control.
+
+### Installation Steps
+1. Clone the repository:
+   ```bash
