@@ -6,7 +6,6 @@ This project involves implementing user acceptance testing and CRUD operations f
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Usage](#usage)
 - [Testing](#testing)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
