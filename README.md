@@ -1,40 +1,20 @@
-# [Project Name] - 42686784
-
-This project involves implementing user acceptance testing and CRUD operations for Clients and Projects using UiPath, along with testing functionalities that are hosted on a web app.
-
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
+# CMPG 323 Project 4 - 42686784
 
 ## Overview
+This project involves creating a UiPath automation process for User Acceptance Testing (UAT) of the NWU Tech Trends Telemetry Portal web application. The aim is to automate the process of testing Create, Read, Update, and Delete (CRUD) functionalities using Robotic Process Automation (RPA).
 
-This project demonstrates the use of robotic process automation with UiPath to perform user acceptance testing, including CRUD operations and a login process. The aim is to provide automated testing solutions hosted on a web application.
+## Project Components
+- **UiPath Process**: Automates UAT tasks for the web application.
+- **GitHub Repository**: Manages source control and documentation.
+- **UiPath Orchestrator**: Hosts the UiPath process.
 
-## Features
-- Automated user acceptance testing using UiPath.
-- CRUD functionalities for Clients and Projects.
-- Login process integration in the UiPath workflow.
-- Hosted on a web app to provide a complete testing environment.
-- Integration with GitHub for version control and project tracking.
+## Prerequisites
+- **UiPath Studio Community Edition**: Must be installed on your computer.
+- **UiPath Automation Cloud Account**: Ensure that you have created an account.
+- **Test Data**: Retrieve the Excel file provided for testing.
+- **Web Application**: Access the web application at [NWU Tech Trends Telemetry Portal](https://nwutechtrendstelemetryportal.azurewebsites.net).
 
-## Technologies Used
-- **UiPath**: For building and managing automation workflows.
-- **GitHub**: For version control and collaborative project management.
-- **Web Hosting Platform**: [Specify the platform used, e.g., Azure, AWS].
-- **Languages/Frameworks**: HTML, CSS, JavaScript.
-
-## Setup and Installation
-
-### Prerequisites
-- Install [UiPath](https://www.uipath.com) to run automation workflows.
-- Install [Git](https://git-scm.com) for version control.
-
-### Installation Steps
-1. Clone the repository:
+## Installation
+1. **Clone Repository**
    ```bash
-   git clone https:https://github.com/Lethabo-A/CMPG-323-Project-4---42686784
+   git clone [Your Repository URL]
