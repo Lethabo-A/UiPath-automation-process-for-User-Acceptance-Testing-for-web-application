@@ -40,4 +40,4 @@ This project demonstrates the use of robotic process automation with UiPath to p
 ### Installation Steps
 1. Clone the repository:
    ```bash
-   git clone https:[//github.com/your-username/your-repo.git](https://github.com/Lethabo-A/CMPG-323-Project-4---42686784)
+   git clone https:https://github.com/Lethabo-A/CMPG-323-Project-4---42686784
