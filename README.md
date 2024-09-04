@@ -17,4 +17,4 @@ This project involves creating a UiPath automation process for User Acceptance T
 ## Installation
 1. **Clone Repository**
    ```bash
-   git clone [Your Repository URL]
+   git clone [https://github.com/Lethabo-A/CMPG-323-Project-4---42686784]
