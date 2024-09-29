@@ -1,0 +1,1254 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Client_Test" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1128.8,4565.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:sma="clr-namespace:System.Management.Automation;assembly=System.Management.Automation" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.ComponentModel.DataAnnotations</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Files.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel.Enums</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>Microsoft.Graph</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Management.Automation</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Annotations</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Management.Automation</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Client_Test" sap:VirtualizedContainerService.HintSize="1172,4706.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="outputElement">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_33</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="772.8,4683.2" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="739.2,4573.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="705.6,4513.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="NWU Tech Trends Data.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="672,4220.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="sd:DataTable" Name="ClientData" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="638.4,201.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1">
+                      <ueab:ReadRangeX.Range>
+                        <InArgument x:TypeArguments="ue:IReadRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">
+                            <CSharpValue.Result>
+                              <OutArgument x:TypeArguments="ue:IReadRangeRef" />
+                            </CSharpValue.Result>Excel.Sheet["Clients"]</CSharpValue>
+                        </InArgument>
+                      </ueab:ReadRangeX.Range>
+                      <ueab:ReadRangeX.SaveTo>
+                        <OutArgument x:TypeArguments="sd:DataTable">
+                          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">
+                            <CSharpReference.Result>
+                              <OutArgument x:TypeArguments="Location(sd:DataTable)" />
+                            </CSharpReference.Result>ClientData</CSharpReference>
+                        </OutArgument>
+                      </ueab:ReadRangeX.SaveTo>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ReadRangeX>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="638.4,56.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                              <ui:CommentOut.Body>
+                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="353.6,108.8" sap2010:WorkflowViewState.IdRef="MessageBox_1">
+                                    <ui:MessageBox.Text>
+                                      <InArgument x:TypeArguments="x:Object">
+                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3" xml:space="preserve">"Client Name: " + CurrentRow["ClientName"].ToString() + 
+                " | Primary Contact Email: " + CurrentRow["PrimaryContactEmail"].ToString() + 
+                " | Date Onboarded: " + CurrentRow["DateOnboarded"].ToString()</CSharpValue>
+                                      </InArgument>
+                                    </ui:MessageBox.Text>
+                                  </ui:MessageBox>
+                                </Sequence>
+                              </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:CommentOut>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                      <ui:ForEachRow.DataTable>
+                        <InArgument x:TypeArguments="sd:DataTable">
+                          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">
+                            <CSharpValue.Result>
+                              <OutArgument x:TypeArguments="sd:DataTable" />
+                            </CSharpValue.Result>ClientData</CSharpValue>
+                        </InArgument>
+                      </ui:ForEachRow.DataTable>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEachRow>
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Home(2)" sap:VirtualizedContainerService.HintSize="638.4,3902.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V2">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604.8,3662.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:Boolean" Name="isLoggedIn" />
+                              <Variable x:TypeArguments="x:Boolean" Name="alreadyloggedin" />
+                              <Variable x:TypeArguments="x:Boolean" Name="loggedin" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:UiElementExists DisplayName="Element Exists 'A  Account/Manage'" sap:VirtualizedContainerService.HintSize="571.2,139.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                              <ui:UiElementExists.Exists>
+                                <OutArgument x:TypeArguments="x:Boolean">
+                                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">loggedin</CSharpReference>
+                                </OutArgument>
+                              </ui:UiElementExists.Exists>
+                              <ui:UiElementExists.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1352c01f-ef80-470f-88d6-60d32a83af06" InformativeScreenshot="a569e47027e965b4ab8a6e9d238823d0" Selector="&lt;webctrl aaname=' lethabo4@gmail.com' class='nav-link' tag='A' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:UiElementExists.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:UiElementExists>
+                            <If sap:VirtualizedContainerService.HintSize="571.2,472" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If.Condition>
+                                <InArgument x:TypeArguments="x:Boolean">
+                                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">loggedin</CSharpValue>
+                                </InArgument>
+                              </If.Condition>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Logout'(4)'" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_38" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/" CVScreenId="af3e95f8-e70b-4faf-b9e5-5f73cf70b626" ContentHash="msCEpdUxFk2uAXA9gMqECg" CvTextArea="68, 456, 42, 16" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="26, 442, 197, 43" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='nav-link' aaname=' Logout                         ' check:innerText='Logout' /&gt;" Guid="57d426c6-5127-4bc2-b18c-37bc19bc5703" InformativeScreenshot="75ed14d6d62e4d30a3aa9a626330c0a5.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/io_e2-JLc0qUv-jthDkuBw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                    </uix:NClick.Target>
+                                    <uix:NClick.VerifyOptions>
+                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionOptions.Retry>
+                                        <uix:VerifyExecutionOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionOptions.Timeout>
+                                      </uix:VerifyExecutionOptions>
+                                    </uix:NClick.VerifyOptions>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NClick>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Login''" sap:VirtualizedContainerService.HintSize="571.2,225.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/" CVScreenId="1350e303-dba5-4c6d-9c5d-e2149dfaa6f7" ContentHash="Ao4zCCx1HUCr5Kg_ldFL_A" CvTextArea="75, 382, 37, 16" CvTextArgument="Login" CvType="Text" DesignTimeRectangle="28, 365, 218, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Login                     ' class='nav-link' tag='A' type='' check:innerText='Login' /&gt;" Guid="04a14dfe-baf2-4091-9cec-7964f1b4b8db" InformativeScreenshot="96f947860d1cecc913709a6f59089dde.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/yp5ogxlOs0K_W5iUX_bhlQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="571.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Text="lethabo4@gmail.com" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/Account/Login" CVScreenId="7ba1b3f9-a0b6-448b-a4f2-0d67acca3dc9" ContentHash="AE5en5gndk-yw6N1l1ekSA" CvElementArea="289, 323, 421, 64" CvType="InputBox" DesignTimeRectangle="294, 326, 413, 58" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl name='Input.Email' tag='INPUT' type='' class='form-control valid' placeholder='name@example.com' aaname='' /&gt;" Guid="4782c772-8436-44b1-a87e-2e2c17d02eda" InformativeScreenshot="8b7d03aa197454f4b1956ebeea45c43e.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/zbyTFUJG60WPGsYIYFrjXA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="7ba1b3f9-a0b6-448b-a4f2-0d67acca3dc9" CvElementArea="289, 323, 421, 64" CvType="InputBox" DesignTimeRectangle="296, 319, 56, 49" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label' aaname='Email' check:innerText='Email' /&gt;" Guid="1c7e3dc0-8b44-4046-bb03-6192a59b3dd0" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="571.2,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Text="Odinaka@1" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/Account/Login" CVScreenId="67c7ca03-ac0f-4cef-9fdc-84f48c31cf0d" ContentHash="pctDYc4GSUeXqb79YDyzwQ" CvElementArea="289, 396, 421, 66" CvType="InputBox" DesignTimeRectangle="294, 400, 413, 58" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='form-control valid' placeholder='password' aaname='' /&gt;" Guid="ff5c1905-8801-4c7f-b770-17195dba2a3c" InformativeScreenshot="00881f7282ee1afaebf21d785f720230.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/zZnvHO5Z3USdbCcutSlb_A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="67c7ca03-ac0f-4cef-9fdc-84f48c31cf0d" CvElementArea="289, 396, 421, 66" CvType="InputBox" DesignTimeRectangle="296, 393, 82, 49" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='form-label' check:innerText='Password' /&gt;" Guid="0e0284cb-a84f-4759-b503-55a19c2bbed4" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Log in''" sap:VirtualizedContainerService.HintSize="571.2,56.8" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/Account/Login" CVScreenId="e30c4e30-34cc-447d-9ed2-d138a7678fae" ContentHash="LF1AGu3sEEqpWWJX1Z_6fg" CvElementArea="292, 521, 415, 51" CvTextArea="471, 537, 58, 23" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="294, 523, 413, 48" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Log in' tag='BUTTON' type='submit' class='w-100 btn btn-lg btn-primary' check:innerText='Log in' /&gt;" Guid="be00d0e3-09f1-4124-a692-95fbf1f5f658" InformativeScreenshot="4bfef04befcef4188d7377267c72dd6f.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/v51zqi-6TEanpPCpTsOMEQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Log in' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Click 'Clients''" sap:VirtualizedContainerService.HintSize="571.2,56.8" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/" CVScreenId="2b08c359-108f-4696-9194-570e0365423b" ContentHash="MqaKnbgPB0SuJ16idv_EkQ" CvTextArea="74, 270, 47, 13" CvTextArgument="Clients" CvType="Text" DesignTimeRectangle="28, 253, 218, 48" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='nav-link' tag='A' type='' aaname=' Clients                 ' check:innerText='Clients' /&gt;" Guid="927b4d47-68c6-43f5-8e47-4e4927632005" InformativeScreenshot="6f72b8e1cc3ce0fe5e49784b939b8be9.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/5C2KavH2xkeAkByTiGpUtQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="571.2,1859.2" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="537.6,1661.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="TestPassed" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Double" DelayBefore="4" DisplayName="Click 'Click 'Create'(3)'" sap:VirtualizedContainerService.HintSize="504,225.6" sap2010:WorkflowViewState.IdRef="NClick_46" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/clients" CVScreenId="32405dc5-b66a-4a1a-9bda-ab11bc301fad" ContentHash="eh4F0QwD2UCmeA-15WbuJQ" CvElementArea="1411, 232, 98, 42" CvType="Button" DesignTimeRectangle="1412, 234, 95, 38" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname=' Create         ' tag='BUTTON' type='' class='btn beveled-button-primary' check:innerText='Create' /&gt;" Guid="8b30e458-0618-4f39-aea7-34c3d61940d0" InformativeScreenshot="19fe5acdec6b9a86fb8c9f093f7b6a1d.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/Qaje2fGBaEiSUxaiwu-JUQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/clients' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                      </uix:NClick.Target>
+                                      <uix:NClick.VerifyOptions>
+                                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                          <uix:VerifyExecutionOptions.Retry>
+                                            <InArgument x:TypeArguments="x:Boolean" />
+                                          </uix:VerifyExecutionOptions.Retry>
+                                          <uix:VerifyExecutionOptions.Timeout>
+                                            <InArgument x:TypeArguments="x:Double" />
+                                          </uix:VerifyExecutionOptions.Timeout>
+                                        </uix:VerifyExecutionOptions>
+                                      </uix:NClick.VerifyOptions>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </uix:NClick>
+                                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="504,1376" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <TryCatch.Try>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="467.2,982.4" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Client Name'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_47" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="acd05b7f-8b36-4eeb-8cd9-daa087db48fc" ContentHash="9xLfs0XXBk-Rd-t0x8YZVg" CvElementArea="297, 302, 1281, 43" CvType="InputBox" DesignTimeRectangle="294, 304, 1286, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='clientName' tag='INPUT' type='' class='form-control valid' aaname='Client Name' /&gt;" Guid="b06d7de6-89ac-47ea-8784-b81a2149bd7f" InformativeScreenshot="a55dd489cd1e6c3a202ce858b7038694.png" IsResponsive="True" Reference="9G8V6_vt6UCIv8c-1kFtWA/kozkVSZKpUu0BXSLcgBbLA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="acd05b7f-8b36-4eeb-8cd9-daa087db48fc" CvTextArea="293, 283, 89, 15" CvTextArgument="Client Name" CvType="Text" DesignTimeRectangle="294, 280, 88, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Client Name' check:innerText='Client Name' /&gt;" Guid="97ef5f89-89f4-46d8-879c-c0b302683105" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NClick>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Client Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="a31d7005-17ab-4a5e-87d2-f5ccfef498fc" ContentHash="V58enj6yl0ikT1xY8KbT4Q" CvElementArea="296, 262, 1283, 41" CvType="InputBox" DesignTimeRectangle="294, 264, 1286, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='clientName' tag='INPUT' type='' class='form-control valid' aaname='Client Name' /&gt;" Guid="55ebba1a-df64-4bcd-9f87-10dbbdd9ec21" InformativeScreenshot="cbfebea39b5869fef94fd52cf9bc493a.png" IsResponsive="True" Reference="9G8V6_vt6UCIv8c-1kFtWA/RyzD-QNXdEuwZHoCvPo8Ig" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="a31d7005-17ab-4a5e-87d2-f5ccfef498fc" CvTextArea="293, 243, 90, 15" CvTextArgument="Client Name" CvType="Text" DesignTimeRectangle="294, 240, 88, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Client Name' check:innerText='Client Name' /&gt;" Guid="1f06ef95-c9b2-4fd5-b2c0-e09e36ee168a" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                            <uix:NTypeInto.Text>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">
+                                                  <CSharpValue.Result>
+                                                    <OutArgument x:TypeArguments="x:String" />
+                                                  </CSharpValue.Result>CurrentRow["ClientName"].ToString()</CSharpValue>
+                                              </InArgument>
+                                            </uix:NTypeInto.Text>
+                                            <uix:NTypeInto.VerifyOptions>
+                                              <uix:VerifyExecutionTypeIntoOptions DisplayName="Input 'Client Name'" Mode="Appears">
+                                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                <uix:VerifyExecutionTypeIntoOptions.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="74347b3e-d98b-4db4-93e2-b834fc46a721" CvElementArea="296, 263, 1284, 40" CvType="InputBox" DesignTimeRectangle="294, 264, 1286, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='clientName' tag='INPUT' type='' class='form-control valid' aaname='Client Name' /&gt;" Guid="ae4e466c-6171-4766-aa5f-3633cfee2aca" InformativeScreenshot="a10d37c7a70d705e983a92c9f39be0b7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target CVScreenId="74347b3e-d98b-4db4-93e2-b834fc46a721" CvTextArea="293, 243, 90, 15" CvTextArgument="Client Name" CvType="Text" DesignTimeRectangle="294, 240, 88, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Client Name' check:innerText='Client Name' /&gt;" Guid="4f7aec45-82a0-4bf3-87d5-dbe8198323aa" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:VerifyExecutionTypeIntoOptions.Target>
+                                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                              </uix:VerifyExecutionTypeIntoOptions>
+                                            </uix:NTypeInto.VerifyOptions>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NTypeInto>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Primary Contact Email'" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_48" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="76a1976e-62bd-4dd3-8776-b9149f5f70a6" ContentHash="cINojwgzh0SNUhjMv5Rx4w" CvElementArea="295, 325, 1283, 40" CvType="InputBox" DesignTimeRectangle="294, 326, 1286, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='primaryContactEmail' tag='INPUT' type='' class='form-control valid' aaname='Primary Contact Email' /&gt;" Guid="0c52f937-1c29-4518-a1bd-9bf1f7292b21" InformativeScreenshot="84ea79d5a45ec9574eac7f9472af0fd5.png" IsResponsive="True" Reference="9G8V6_vt6UCIv8c-1kFtWA/VXfDzUnDdkir6MDMRphP4A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="76a1976e-62bd-4dd3-8776-b9149f5f70a6" CvTextArea="293, 305, 160, 18" CvTextArgument="Primary Contact Email" CvType="Text" DesignTimeRectangle="294, 302, 159, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Primary Contact Email' tag='LABEL' type='' class='' check:innerText='Primary Contact Email' /&gt;" Guid="67d9c790-6b05-461c-b1ff-4dfc519d922c" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NClick>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Primary Contact Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_25" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="76a1976e-62bd-4dd3-8776-b9149f5f70a6" ContentHash="1qF3BzgiYkmcG8UAprr1ZQ" CvElementArea="295, 325, 1283, 40" CvType="InputBox" DesignTimeRectangle="294, 326, 1286, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='primaryContactEmail' tag='INPUT' type='' class='form-control valid' aaname='Primary Contact Email' /&gt;" Guid="14029c31-3d51-450f-a55e-20a74ef79e7a" InformativeScreenshot="371e66a56855a48784c8324275c4aea1.png" IsResponsive="True" Reference="9G8V6_vt6UCIv8c-1kFtWA/56naDILsxUOMcDFHo8g50w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="76a1976e-62bd-4dd3-8776-b9149f5f70a6" CvTextArea="293, 305, 160, 18" CvTextArgument="Primary Contact Email" CvType="Text" DesignTimeRectangle="294, 302, 159, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Primary Contact Email' tag='LABEL' type='' class='' check:innerText='Primary Contact Email' /&gt;" Guid="33ca0dd2-7605-4d93-ada7-092824f0fd76" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                            <uix:NTypeInto.Text>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">
+                                                  <CSharpValue.Result>
+                                                    <OutArgument x:TypeArguments="x:String" />
+                                                  </CSharpValue.Result>CurrentRow["PrimaryContactEmail"].ToString()</CSharpValue>
+                                              </InArgument>
+                                            </uix:NTypeInto.Text>
+                                            <uix:NTypeInto.VerifyOptions>
+                                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                              </uix:VerifyExecutionTypeIntoOptions>
+                                            </uix:NTypeInto.VerifyOptions>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NTypeInto>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Date Onboarded'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_26" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="a31d7005-17ab-4a5e-87d2-f5ccfef498fc" ContentHash="KgxhBrIC0EWNsEFaxCRHyw" CvTextArea="305, 397, 88, 20" CvTextArgument="yyyy/mm/dd" CvType="Text" DesignTimeRectangle="294, 388, 1286, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='dateOnboarded' tag='INPUT' type='date' class='form-control valid' aaname='Date Onboarded' /&gt;" Guid="c4e36667-f403-4ed6-a5ae-a583ee861ad3" InformativeScreenshot="60670788528e441fa8a4c90057afe924.png" IsResponsive="True" Reference="9G8V6_vt6UCIv8c-1kFtWA/Ss2Hm1E4N0GRagLchxX1Ug" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target CVScreenId="a31d7005-17ab-4a5e-87d2-f5ccfef498fc" CvTextArea="293, 367, 120, 15" CvTextArgument="Date Onboarded" CvType="Text" DesignTimeRectangle="294, 364, 118, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Date Onboarded' tag='LABEL' type='' class='' check:innerText='Date Onboarded' /&gt;" Guid="963507b3-2ea5-4f14-84f8-b0ad7bf76f5e" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                            <uix:NTypeInto.Text>
+                                              <InArgument x:TypeArguments="x:String">
+                                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">DateTime.Parse(CurrentRow["DateOnboarded"].ToString()).ToString("00yyyy/MM/dd")</CSharpValue>
+                                              </InArgument>
+                                            </uix:NTypeInto.Text>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NTypeInto>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Create'(7)'" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_49" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="b3377be6-0325-4c5d-b904-f83a87baae80" ContentHash="moLyT7WsY0CNyUWsqh1Ccw" CvElementArea="264, 395, 70, 36" CvTextArea="276, 406, 45, 13" CvTextArgument="Create" CvType="Button" DesignTimeRectangle="266, 397, 67, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Create' tag='BUTTON' type='submit' class='btn btn-primary' check:innerText='Create' /&gt;" Guid="c3c77f3d-548a-4267-bb03-70c334c66913" InformativeScreenshot="4c6035f6e4c0271c9fabf808154273a4.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/aTmxX8tMv06xd2G6PUDRFg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </uix:NClick>
+                                          <ueab:WriteCellX AutoIncrementRow="True" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteCellX_13">
+                                            <ueab:WriteCellX.Cell>
+                                              <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                                <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">Excel.SelectedSheet.Cell["E2"]</CSharpValue>
+                                              </InArgument>
+                                            </ueab:WriteCellX.Cell>
+                                            <ueab:WriteCellX.Value>
+                                              <InArgument x:TypeArguments="x:Object">
+                                                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">"TRUE"</CSharpValue>
+                                              </InArgument>
+                                            </ueab:WriteCellX.Value>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ueab:WriteCellX>
+                                        </Sequence>
+                                      </TryCatch.Try>
+                                      <TryCatch.Catches>
+                                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="470.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="s:Exception">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Back to List'(1)'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_50" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="c2999344-bc20-40fc-958a-ae708d5305f4" ContentHash="M4714lWqtUCM5jQVJT4aDw" CvElementArea="336, 396, 99, 37" CvTextArea="348, 406, 76, 13" CvTextArgument="Back to List" CvType="Button" DesignTimeRectangle="337, 397, 98, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='btn btn-secondary' check:innerText='Back to List' /&gt;" Guid="0101a793-e0b3-47cf-80db-105705153607" InformativeScreenshot="017684cde353d534ae48d8d58758c858.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/EMT6_WtFN02tNxAklTv-uw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                                <uix:NClick.VerifyOptions>
+                                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                    <uix:VerifyExecutionOptions.Retry>
+                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                    </uix:VerifyExecutionOptions.Retry>
+                                                    <uix:VerifyExecutionOptions.Timeout>
+                                                      <InArgument x:TypeArguments="x:Double" />
+                                                    </uix:VerifyExecutionOptions.Timeout>
+                                                  </uix:VerifyExecutionOptions>
+                                                </uix:NClick.VerifyOptions>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NClick>
+                                              <ueab:WriteCellX AutoIncrementRow="True" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="WriteCellX_6">
+                                                <ueab:WriteCellX.Cell>
+                                                  <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                                    <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">Excel.SelectedSheet.Cell["E2"]</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Cell>
+                                                <ueab:WriteCellX.Value>
+                                                  <InArgument x:TypeArguments="x:Object">
+                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">"FALSE"</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ueab:WriteCellX>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </Catch>
+                                        <Catch x:TypeArguments="s:ArgumentException" sap:VirtualizedContainerService.HintSize="470.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="s:ArgumentException">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="s:ArgumentException" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Back to List'(1)'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_51" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="c2999344-bc20-40fc-958a-ae708d5305f4" ContentHash="M4714lWqtUCM5jQVJT4aDw" CvElementArea="336, 396, 99, 37" CvTextArea="348, 406, 76, 13" CvTextArgument="Back to List" CvType="Button" DesignTimeRectangle="337, 397, 98, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='btn btn-secondary' check:innerText='Back to List' /&gt;" Guid="0101a793-e0b3-47cf-80db-105705153607" InformativeScreenshot="017684cde353d534ae48d8d58758c858.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/EMT6_WtFN02tNxAklTv-uw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                                <uix:NClick.VerifyOptions>
+                                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                    <uix:VerifyExecutionOptions.Retry>
+                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                    </uix:VerifyExecutionOptions.Retry>
+                                                    <uix:VerifyExecutionOptions.Timeout>
+                                                      <InArgument x:TypeArguments="x:Double" />
+                                                    </uix:VerifyExecutionOptions.Timeout>
+                                                  </uix:VerifyExecutionOptions>
+                                                </uix:NClick.VerifyOptions>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NClick>
+                                              <ueab:WriteCellX AutoIncrementRow="True" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="WriteCellX_14">
+                                                <ueab:WriteCellX.Cell>
+                                                  <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                                    <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">Excel.SelectedSheet.Cell["E2"]</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Cell>
+                                                <ueab:WriteCellX.Value>
+                                                  <InArgument x:TypeArguments="x:Object">
+                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">"FALSE"</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ueab:WriteCellX>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </Catch>
+                                        <Catch x:TypeArguments="s:NullReferenceException" sap:VirtualizedContainerService.HintSize="470.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="s:NullReferenceException">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="s:NullReferenceException" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Back to List'(1)'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_52" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="c2999344-bc20-40fc-958a-ae708d5305f4" ContentHash="M4714lWqtUCM5jQVJT4aDw" CvElementArea="336, 396, 99, 37" CvTextArea="348, 406, 76, 13" CvTextArgument="Back to List" CvType="Button" DesignTimeRectangle="337, 397, 98, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='btn btn-secondary' check:innerText='Back to List' /&gt;" Guid="0101a793-e0b3-47cf-80db-105705153607" InformativeScreenshot="017684cde353d534ae48d8d58758c858.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/EMT6_WtFN02tNxAklTv-uw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                                <uix:NClick.VerifyOptions>
+                                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                    <uix:VerifyExecutionOptions.Retry>
+                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                    </uix:VerifyExecutionOptions.Retry>
+                                                    <uix:VerifyExecutionOptions.Timeout>
+                                                      <InArgument x:TypeArguments="x:Double" />
+                                                    </uix:VerifyExecutionOptions.Timeout>
+                                                  </uix:VerifyExecutionOptions>
+                                                </uix:NClick.VerifyOptions>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NClick>
+                                              <ueab:WriteCellX AutoIncrementRow="True" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="WriteCellX_15">
+                                                <ueab:WriteCellX.Cell>
+                                                  <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                                    <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">Excel.SelectedSheet.Cell["E2"]</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Cell>
+                                                <ueab:WriteCellX.Value>
+                                                  <InArgument x:TypeArguments="x:Object">
+                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">"FALSE"</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ueab:WriteCellX>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </Catch>
+                                        <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="470.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="si:IOException">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Back to List'(1)'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_53" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="c2999344-bc20-40fc-958a-ae708d5305f4" ContentHash="M4714lWqtUCM5jQVJT4aDw" CvElementArea="336, 396, 99, 37" CvTextArea="348, 406, 76, 13" CvTextArgument="Back to List" CvType="Button" DesignTimeRectangle="337, 397, 98, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='btn btn-secondary' check:innerText='Back to List' /&gt;" Guid="0101a793-e0b3-47cf-80db-105705153607" InformativeScreenshot="017684cde353d534ae48d8d58758c858.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/EMT6_WtFN02tNxAklTv-uw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                                <uix:NClick.VerifyOptions>
+                                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                    <uix:VerifyExecutionOptions.Retry>
+                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                    </uix:VerifyExecutionOptions.Retry>
+                                                    <uix:VerifyExecutionOptions.Timeout>
+                                                      <InArgument x:TypeArguments="x:Double" />
+                                                    </uix:VerifyExecutionOptions.Timeout>
+                                                  </uix:VerifyExecutionOptions>
+                                                </uix:NClick.VerifyOptions>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NClick>
+                                              <ueab:WriteCellX AutoIncrementRow="True" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="WriteCellX_8">
+                                                <ueab:WriteCellX.Cell>
+                                                  <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                                    <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">Excel.SelectedSheet.Cell["E2"]</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Cell>
+                                                <ueab:WriteCellX.Value>
+                                                  <InArgument x:TypeArguments="x:Object">
+                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">"FALSE"</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ueab:WriteCellX>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </Catch>
+                                        <Catch x:TypeArguments="s:InvalidOperationException" sap:VirtualizedContainerService.HintSize="470.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_8">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="s:InvalidOperationException">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="s:InvalidOperationException" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Back to List'(1)'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_54" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="c2999344-bc20-40fc-958a-ae708d5305f4" ContentHash="M4714lWqtUCM5jQVJT4aDw" CvElementArea="336, 396, 99, 37" CvTextArea="348, 406, 76, 13" CvTextArgument="Back to List" CvType="Button" DesignTimeRectangle="337, 397, 98, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='btn btn-secondary' check:innerText='Back to List' /&gt;" Guid="0101a793-e0b3-47cf-80db-105705153607" InformativeScreenshot="017684cde353d534ae48d8d58758c858.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/EMT6_WtFN02tNxAklTv-uw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                                <uix:NClick.VerifyOptions>
+                                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                    <uix:VerifyExecutionOptions.Retry>
+                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                    </uix:VerifyExecutionOptions.Retry>
+                                                    <uix:VerifyExecutionOptions.Timeout>
+                                                      <InArgument x:TypeArguments="x:Double" />
+                                                    </uix:VerifyExecutionOptions.Timeout>
+                                                  </uix:VerifyExecutionOptions>
+                                                </uix:NClick.VerifyOptions>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NClick>
+                                              <ueab:WriteCellX AutoIncrementRow="True" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="WriteCellX_12">
+                                                <ueab:WriteCellX.Cell>
+                                                  <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                                    <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">Excel.SelectedSheet.Cell["E2"]</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Cell>
+                                                <ueab:WriteCellX.Value>
+                                                  <InArgument x:TypeArguments="x:Object">
+                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">"FALSE"</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ueab:WriteCellX>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </Catch>
+                                        <Catch x:TypeArguments="ui:SelectorNotFoundException" sap:VirtualizedContainerService.HintSize="470.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="ui:SelectorNotFoundException">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="ui:SelectorNotFoundException" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="416,196.8" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Back to List'(1)'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NClick_56" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="c2999344-bc20-40fc-958a-ae708d5305f4" ContentHash="M4714lWqtUCM5jQVJT4aDw" CvElementArea="336, 396, 99, 37" CvTextArea="348, 406, 76, 13" CvTextArgument="Back to List" CvType="Button" DesignTimeRectangle="337, 397, 98, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='btn btn-secondary' check:innerText='Back to List' /&gt;" Guid="0101a793-e0b3-47cf-80db-105705153607" InformativeScreenshot="017684cde353d534ae48d8d58758c858.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/EMT6_WtFN02tNxAklTv-uw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                                <uix:NClick.VerifyOptions>
+                                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                    <uix:VerifyExecutionOptions.Retry>
+                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                    </uix:VerifyExecutionOptions.Retry>
+                                                    <uix:VerifyExecutionOptions.Timeout>
+                                                      <InArgument x:TypeArguments="x:Double" />
+                                                    </uix:VerifyExecutionOptions.Timeout>
+                                                  </uix:VerifyExecutionOptions>
+                                                </uix:NClick.VerifyOptions>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NClick>
+                                              <ueab:WriteCellX AutoIncrementRow="True" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="382.4,48" sap2010:WorkflowViewState.IdRef="WriteCellX_17">
+                                                <ueab:WriteCellX.Cell>
+                                                  <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                                    <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">Excel.SelectedSheet.Cell["E2"]</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Cell>
+                                                <ueab:WriteCellX.Value>
+                                                  <InArgument x:TypeArguments="x:Object">
+                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">"FALSE"</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ueab:WriteCellX>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </Catch>
+                                        <Catch x:TypeArguments="sma:RemoteException" sap:VirtualizedContainerService.HintSize="470.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_10">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ActivityAction x:TypeArguments="sma:RemoteException">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="sma:RemoteException" Name="exception" />
+                                            </ActivityAction.Argument>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Back to List'(1)'" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_57" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="c2999344-bc20-40fc-958a-ae708d5305f4" ContentHash="Vu6c_y5hlk6_xRwH8KzalQ" CvElementArea="336, 396, 99, 37" CvTextArea="348, 406, 76, 13" CvTextArgument="Back to List" CvType="Button" DesignTimeRectangle="337, 397, 98, 34" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Back to List' tag='A' type='' class='btn btn-secondary' check:innerText='Back to List' /&gt;" Guid="0101a793-e0b3-47cf-80db-105705153607" InformativeScreenshot="017684cde353d534ae48d8d58758c858.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/EMT6_WtFN02tNxAklTv-uw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                </uix:NClick.Target>
+                                                <uix:NClick.VerifyOptions>
+                                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                    <uix:VerifyExecutionOptions.Retry>
+                                                      <InArgument x:TypeArguments="x:Boolean" />
+                                                    </uix:VerifyExecutionOptions.Retry>
+                                                    <uix:VerifyExecutionOptions.Timeout>
+                                                      <InArgument x:TypeArguments="x:Double" />
+                                                    </uix:VerifyExecutionOptions.Timeout>
+                                                  </uix:VerifyExecutionOptions>
+                                                </uix:NClick.VerifyOptions>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </uix:NClick>
+                                              <ueab:WriteCellX AutoIncrementRow="True" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="WriteCellX_16">
+                                                <ueab:WriteCellX.Cell>
+                                                  <InArgument x:TypeArguments="ue:IReadWriteCellRef">
+                                                    <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">Excel.SelectedSheet.Cell["E2"]</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Cell>
+                                                <ueab:WriteCellX.Value>
+                                                  <InArgument x:TypeArguments="x:Object">
+                                                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">"FALSE"</CSharpValue>
+                                                  </InArgument>
+                                                </ueab:WriteCellX.Value>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ueab:WriteCellX>
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </Catch>
+                                      </TryCatch.Catches>
+                                      <TryCatch.Finally>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Clients'(1)'" sap:VirtualizedContainerService.HintSize="209.6,24.8" sap2010:WorkflowViewState.IdRef="NClick_55" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/create-client" CVScreenId="2f59fc04-7dd7-4c91-bf55-e5b11b95211c" ContentHash="DQkiA0dqDEeENZSrWiGBiw" CvTextArea="68, 254, 42, 13" CvTextArgument="Clients" CvType="Text" DesignTimeRectangle="26, 240, 197, 43" DesignTimeScaleFactor="0.8999999761581421" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Clients                 ' class='nav-link' tag='A' type='' check:innerText='Clients' /&gt;" Guid="54aba66e-9c37-4b17-a245-d611b06e096f" InformativeScreenshot="ea5e939cb2731217b95c5111fea74200.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/F2Ck9n-85UOkirGs214SVA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='techtrendstelemetryportal.azurewebsites.net/create-client' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NClick>
+                                      </TryCatch.Finally>
+                                    </TryCatch>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                              <ui:ForEachRow.DataTable>
+                                <InArgument x:TypeArguments="sd:DataTable">
+                                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">
+                                    <CSharpValue.Result>
+                                      <OutArgument x:TypeArguments="sd:DataTable" />
+                                    </CSharpValue.Result>ClientData</CSharpValue>
+                                </InArgument>
+                              </ui:ForEachRow.DataTable>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:ForEachRow>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click 'Logout'(3)'" sap:VirtualizedContainerService.HintSize="571.2,218.4" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c6f44b2c-2412-4e77-97b5-be2fd6e71be0" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://techtrendstelemetryportal.azurewebsites.net/" CVScreenId="bdcbcad8-0b6f-4119-84ac-ee67d016fd6b" ContentHash="YWcz63TOX02GwiC4Fsqk5w" CvTextArea="68, 456, 42, 16" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="26, 442, 197, 43" DesignTimeScaleFactor="0.8999999761581421" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='nav-link' aaname=' Logout                         ' check:innerText='Logout' /&gt;" Guid="f9553ca5-0124-4c22-bf71-2860d9fe95e0" InformativeScreenshot="75ed14d6d62e4d30a3aa9a626330c0a5.png" Reference="9G8V6_vt6UCIv8c-1kFtWA/iWOZEiQPzUuyWwzj9GNlFA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="1912, 50, 1616, 868" BrowserType="Edge" ContentHash="f57njwQIE0CSwiW1hUMcBw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMSSURBVFhHxZcxa1RREIXzE/YnpLdJZ5vCH7DWImxjY2M6wSqgtWxrIQh2FpIqWAathS1ERRQ3iEhQYRHZ9jnf8M5j3rxJ3kaNFifkzp07Z+bM3JuXraZp/itK40VgvV5vG44MB4Zd2QeOfwNGMDXsG/aCDeImwPcGh/8UFniWiFjvaX3/9rHsK8OkDPI7sGBI3FX5/PCriJAdsubx/HNz9dKr5uWL79qblcEyzJHguwZkrdARfzv56VXeuf5eJI43i5WTg6DCQUkIbHNiIPiydR7FsycnzY0rb52EamWH/Nrl110C+LR7y9PI6ZnLBqgK2Z4+/OKBM+7d/NgjAMcffvhZzuQ9oNiZmKofaRNSgufDY0D+qEYFiqoSYGB8MxNTBYGFqqrzgLb0ErDFXOS3pu86RxIJU9sDdpKJgTeFYoicCe+RU6GuEv18cPdTTwHWSgy/8yrCOaAEfNIZKDlIIojiwQwUIvF4zcZAAW0CR131VCkHJhfbpvKiGklwrtrPoNA2gTkJ+NSret3RqAa28LI58qygFPazJl+QuoZpJ7+CUQXB1VMCskYhkhK4ZtgjIT5jKgT5V7SfBNwgB7KjWq0hInAeMgWKbYKcwYx+GUHJeZcAlciBdZQ/r4UqAfywRb+IWL1hu0sgTjDri0gABVGSfcM+5GULcEJ2rZGsaoHI+Msmm+Yi+glB+oXIewmIQD3XQV0xVOLOUzE+nMHGHr0H2Cq15G9A+p2cgL//evslbayMJIJ8Tso+SSs4tkwe9w0DciXgn0s46iCTTMB8p1nHu38W8Av3vSRXAnztuKMIdfcJsCmhwNmoSht7WZED/2EO/hrGO6zeS9qsRgR7tESDxhlexiT/JJMDJcCHCE69VqQe+hyQZIT2AIrl2WgxzcRC94s57RgGSahCKqLCnADqQCqFit7PImFGb2HO/EPhSVBtfGTGAHGqmr8x5eBFDAwcMizaIJ4Id1xvQASVsxevaAu+psueZ5RGYAG4nht/khvwhdjf+E1RGiMsoP4h4cHK4PaQ6KjUp6E0/js0W78AQWMC43VltAEAAAAASUVORK5CYII=" InformativeScreenshot="801a56dfd925a5ec294e60509f0ded05.jpg" Reference="9G8V6_vt6UCIv8c-1kFtWA/k3QEv4XmJkSzG3DWaJVJDQ" Selector="&lt;html app='msedge.exe' title='Home' /&gt;" Title="Home" Url="https://techtrendstelemetryportal.azurewebsites.net/" />
+                      </uix:NApplicationCard.TargetApp>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
